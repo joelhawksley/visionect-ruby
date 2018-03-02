@@ -1,35 +1,44 @@
-# Visionect
+### Visionect Server Management API
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/visionect`. To experiment with that code, run `bin/console` for an interactive prompt.
+Client library for the Visionect Server Management API
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
+#### Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'visionect'
+gem 'visionect', git: 'https://github.com/joelhawksley/visionect.git'
 ```
 
-And then execute:
+#### Usage
 
-    $ bundle
+First, initialize and configure the client:
 
-Or install it yourself as:
+```ruby
+client = Visionect::Client.new(
+  host: 'visionect.myhost.com',
+  port: (optional, defaults to 8081),
+  api_key: 'my_api_key',
+  api_secret: 'my_api_secret'
+)
+```
 
-    $ gem install visionect
+(or, set `VISIONECT_HOST`, `VISIONECT_PORT` (optional), `VISIONECT_API_KEY`, and `VISIONECT_API_SECRET` in your environment)
 
-## Usage
+And then make a request:
 
-TODO: Write usage instructions here
+```ruby
+client.update_backend(uuids: [abc123]...)
+```
 
-## Development
+#### Resources
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+##### Backend
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+###### update_backend(uuids:, binary_png:)
 
-## Contributing
+Updates the provided device UUIDs with the given binary PNG image.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/visionect.
+#### Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/joelhawksley/visionect.

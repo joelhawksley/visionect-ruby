@@ -1,5 +1,5 @@
 require "visionect/version"
+require "visionect/client"
 
 module Visionect
-  # Your code goes here...
 end
