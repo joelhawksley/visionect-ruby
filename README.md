@@ -1,4 +1,4 @@
-### Visionect Server Management API
+### visionect
 
 Client library for the Visionect Server Management API
 
