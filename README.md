@@ -1,4 +1,4 @@
-### visionect
+### visionect-ruby
 
 Client library for the Visionect Server Management API
 
