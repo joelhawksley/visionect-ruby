@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "visionect/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "visionect"
+  spec.name          = "visionect-ruby"
   spec.version       = Visionect::VERSION
   spec.authors       = ["Joel Hawksley"]
   spec.email         = ["joel@hawksley.org"]

@@ -7,7 +7,7 @@ Client library for the Visionect Server Management API
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'visionect', git: 'https://github.com/joelhawksley/visionect.git'
+gem 'visionect-ruby', git: 'https://github.com/joelhawksley/visionect.git'
 ```
 
 #### Usage
