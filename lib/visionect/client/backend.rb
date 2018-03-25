@@ -2,7 +2,7 @@ require 'net/http/post/multipart'
 
 module Visionect
   class Client
-    module Backends
+    module Backend
       def update_backend(uuids:, binary_png:)
         boundary = "#{rand(10000000000000000000)}"
         date = Time.new.httpdate

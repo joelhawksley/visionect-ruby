@@ -1,8 +1,8 @@
-require "visionect/client/backends"
+require "visionect/client/backend"
 
 module Visionect
   class Client
-    include Visionect::Client::Backends
+    include Visionect::Client::Backend
 
     attr_reader :host, :port, :api_key, :api_secret
 

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    visionect (0.1.0)
+    visionect-ruby (0.1.0)
       multipart-post
 
 GEM
@@ -48,7 +48,7 @@ DEPENDENCIES
   pry
   rake (~> 10.0)
   rspec
-  visionect!
+  visionect-ruby!
   webmock
 
 BUNDLED WITH

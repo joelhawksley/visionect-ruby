@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe Visionect::Client::Backends do
+RSpec.describe Visionect::Client::Backend do
   let(:api_key) { "abc123" }
   let(:host) { "visionect.foo.com" }
   let(:client) { Visionect::Client.new(host: host, api_key: api_key, api_secret: "def456") }
