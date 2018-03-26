@@ -1,8 +1,8 @@
-### visionect-ruby
+## visionect-ruby
 
 Client library for the Visionect Server Management API
 
-#### Installation
+### Installation
 
 Add this line to your application's Gemfile:
 
@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 gem 'visionect-ruby', git: 'https://github.com/joelhawksley/visionect-ruby.git'
 ```
 
-#### Usage
+### Usage
 
 First, initialize and configure the client:
 
@@ -31,14 +31,20 @@ And then make a request:
 client.update_backend(uuids: [abc123]...)
 ```
 
-#### Resources
+### Resources
 
-##### Backend
+#### Device
 
-###### update_backend(uuids:, binary_png:)
+##### get_device(uuid:)
+
+Returns an HTTP response object with a JSON payload.
+
+#### Backend
+
+##### update_backend(uuids:, binary_png:)
 
 Updates the provided device UUIDs with the given binary PNG image.
 
-#### Contributing
+### Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/joelhawksley/visionect.
