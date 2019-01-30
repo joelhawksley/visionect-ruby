@@ -41,6 +41,27 @@ Returns an HTTP response object with a JSON payload.
 
 #### Backend
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##### update_backend(uuids:, binary_png:)
 
 Updates the provided device UUIDs with the given binary PNG image.
